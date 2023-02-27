@@ -1,6 +1,8 @@
 # URL Shortener Service
 This is a URL shortener service that is built using AWS CDK, Lambda functions, API Gateway, and DynamoDB. The service takes a long URL as an input and generates a short URL that can be used to redirect to the original URL.
 
+![Capture](https://user-images.githubusercontent.com/126279861/221706370-f1927c18-0362-4dfa-afae-d7709b2b040f.PNG)
+
 ## Prerequisites
 Before you can run this project, you need to have the following software installed on your computer:
 
