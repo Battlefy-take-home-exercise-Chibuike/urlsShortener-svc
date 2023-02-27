@@ -1,4 +1,4 @@
-name: urlShortener-to-AWS
+name: urlShortener-deploy-AWS
 
 on:
   push:
@@ -25,11 +25,13 @@ jobs:
       run: npx cdk synth
 
     - name: Deploy CloudFormation stack
-      uses: aws-actions/aws-cloudformation-deploy@v1
+      uses: aws-actions/aws-cloudformation-action@1.4.0
       with:
         stack-name: UrlShortenerSvcStack
-        capabilities: CAPABILITY_NAMED_IAM
         template-file: ./cdk.out/UrlShortenerSvcStack.template.json
+        parameters: |
+          TABLE_NAME=urls-Table
+        capabilities: CAPABILITY_NAMED_IAM
 
     - name: Deploy Lambda functions
       run: npx cdk deploy '*' --require-approval never
