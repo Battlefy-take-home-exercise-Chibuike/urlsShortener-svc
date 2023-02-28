@@ -14,7 +14,7 @@ Before you can run this project, you need to have the following software install
 
 ### Clone the repository to your local machine:
 ```
-git clone https://github.com/Battlefy-take-home-exercise-Chibuike/urlsShortener-service.git
+git clone https://github.com/Battlefy-take-home-exercise-Chibuike/urlsShortener-svc.git
 ```
 
 ## Install the dependencies:
